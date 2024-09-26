@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Sidebar toggle button -->
+    <button id="sidebar-toggle" onclick="toggleSidebar()">☰ Menu</button>
+
+    <!-- Sidebar menu -->
+    <div id="sidebar">
+        <button onclick="location.href='index.html'">Home</button>
+        <button onclick="location.href='add.html'">Add</button>
+        <button onclick="location.href='update.html'">Update</button>
+        <button onclick="location.href='remove.html'">Remove</button>
+    </div>
+
+    <header>
+        <h1>Add Weather Information</h1>
+        <div class="input-container">
+            <input type="text" id="new-location" placeholder="Location">
+            <input type="number" id="new-temperature" placeholder="Temperature (°C)">
+            <input type="number" id="new-wind-speed" placeholder="Wind Speed (m/s)">
+            <input type="text" id="new-description" placeholder="Description">
+            <button onclick="addWeather()">Add</button>
+        </div>
+        <div id="alert-message"></div>
+    </header>
+
+    <script src="add.js"></script>
+    <script src="sidebar.js"></script>
+</body>
+</html>
